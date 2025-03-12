@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+article {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+article h2 {
+    margin-top: 0;
+    color: #ff4500;
+}
+
+/* Estilos para las secciones laterales */
+aside {
+    flex: 0 0 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffe4e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    order: 1; /* Coloca el aside al final en dispositivos móviles */
+}
+
+@media (min-width: 768px) {
+    aside {
+        order: 0; /* Coloca el aside a la derecha en pantallas más grandes */
+    }
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
